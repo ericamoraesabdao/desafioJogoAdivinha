@@ -11,8 +11,6 @@ public class Main {
         System.out.print("Tente acertar meu número, digite o seu: ");
         int numero = Integer.parseInt(scanner.nextLine());
 
-        System.out.println(numero + ", " + sorteiaNumero);
-
         int pontuacao = 0;
         
         while (pontuacao<99){
@@ -30,8 +28,6 @@ public class Main {
 
                     System.out.print("Tente novamente, digite outro número: ");
                     numero = Integer.parseInt(scanner2.nextLine());
-
-                    System.out.println(numero + ", " + sorteiaNumero);
                 }
 
             } else if (sorteiaNumero == numero - 1 || sorteiaNumero == numero + 1) {
@@ -56,6 +52,5 @@ public class Main {
                 numero = Integer.parseInt(scanner4.nextLine());
             }
         }
-
         }
     }
