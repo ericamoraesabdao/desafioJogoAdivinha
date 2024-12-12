@@ -12,7 +12,7 @@ public class Main {
         int numero = Integer.parseInt(scanner.nextLine());
 
         int pontuacao = 0;
-        
+
         while (pontuacao<99){
             if (sorteiaNumero == numero) {
                 pontuacao = pontuacao + 10;
