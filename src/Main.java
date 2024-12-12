@@ -34,7 +34,7 @@ public class Main {
 
                             System.out.print("Tente novamente, digite outro número: ");
                             numero = Integer.parseInt(scanner2.nextLine());
-                            continuar = 0;
+//                            continuar = 0;
 
                         } else if (continuar == 2) {
                             break;
@@ -73,7 +73,7 @@ public class Main {
                         System.out.print("Tente novamente, digite outro número: ");
                         numero = Integer.parseInt(scanner3.nextLine());
                     }
-                    continuar = 0;
+                    //continuar = 0;
                 } else if (continuar == 2) {
                     break;
                 } else {
@@ -103,7 +103,7 @@ public class Main {
 
                     System.out.print("Tente novamente, digite outro número: ");
                     numero = Integer.parseInt(scanner4.nextLine());
-                    continuar = 0;
+                    //continuar = 0;
                 } else if (continuar == 2) {
                     break;
                 } else {
