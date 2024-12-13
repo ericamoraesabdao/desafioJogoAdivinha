@@ -32,7 +32,6 @@ public class Main {
                 } else {
                     return;
                 }
-
             }
             JogoAdivinha.adivinha(dif);
     }
