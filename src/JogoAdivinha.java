@@ -5,7 +5,7 @@ public class JogoAdivinha {
     public static void adivinha(int dificuldade) {
         Random random = new Random();
         int sorteiaNumero = random.nextInt(dificuldade);
-        System.out.println(sorteiaNumero);
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Tente acertar meu número, digite o seu: ");
@@ -34,6 +34,7 @@ public class JogoAdivinha {
 
                         System.out.print("Tente novamente, digite outro número: ");
                         numero = Integer.parseInt(scanner2.nextLine());
+
                     } else if (continuar == 2) {
                         break;
                     } else {
