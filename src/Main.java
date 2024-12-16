@@ -1,10 +1,9 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-            int dif = 0;
-            int escolha = 0;
+            int dif;
+            int escolha;
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Escolha qual dificuldade você vai querer: 1.Fácil, 2.Médio, 3.Difícil");
@@ -33,13 +32,7 @@ public class Main {
                 } else {
                     return;
                 }
-
             }
-            System.out.println("dif: " + dif + ", escolha: "+ escolha);
-
             JogoAdivinha.adivinha(dif);
-
-
-
     }
 }
