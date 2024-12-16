@@ -12,8 +12,8 @@ public class JogoAdivinha {
         System.out.print("Tente acertar meu número, digite o seu: ");
         int numero = Integer.parseInt(scanner.nextLine());
 
-        ArrayList numerosAcertados = new ArrayList();
-        ArrayList numerosErrados = new ArrayList();
+        ArrayList <Integer> numerosAcertados = new ArrayList <> ();
+        ArrayList <Integer> numerosErrados = new ArrayList <> ();
 
         int pontuacao = 0;
 
@@ -22,7 +22,6 @@ public class JogoAdivinha {
                 pontuacao = pontuacao + 10;
                 System.out.println("Parabéns você ganhou 10 pontos. Sua pontuação atual é: " + pontuacao);
                 numerosAcertados.add(numero);
-                System.out.println("acertos" + numerosAcertados);
 
                 if (pontuacao >= 100) {
                     System.out.println("Parabéns você chegou a 100 pontos e ganhou");
@@ -75,7 +74,6 @@ public class JogoAdivinha {
                 pontuacao = pontuacao + 5;
                 System.out.println("Parabéns você ganhou 5 pontos. Sua pontuação atual é: " + pontuacao);
                 numerosErrados.add(numero);
-                System.out.println("erros" + numerosErrados);
 
                 Scanner continua = new Scanner(System.in);
 
@@ -118,7 +116,6 @@ public class JogoAdivinha {
             } else {
                 System.out.println("Que pena você não pontuou. Sua pontuação atual é: " + pontuacao);
                 numerosErrados.add(numero);
-                System.out.println("erros" + numerosErrados);
 
                 Scanner continua = new Scanner(System.in);
 
